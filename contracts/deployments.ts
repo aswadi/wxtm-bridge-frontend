@@ -1,5 +1,6 @@
-// Vendored from wxtm-bridge-contracts (see scripts/sync-contracts.mjs); replaces the
-// unpublished @tari-project/wxtm-bridge-contracts@0.2.0 `deployments` entry point.
+// Vendored from wxtm-bridge-contracts (see scripts/sync-contracts.mjs) instead of importing the
+// @tari-project/wxtm-bridge-contracts `deployments` entry point, so a package update can't change
+// the trust anchor without a reviewed diff here.
 import type { baseSepolia, mainnet, sepolia } from 'viem/chains'
 import deployments from './deployments.json'
 

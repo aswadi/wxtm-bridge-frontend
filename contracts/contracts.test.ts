@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { mainnet, sepolia } from 'viem/chains'
+import { baseSepolia, mainnet, sepolia } from 'viem/chains'
 import { wTARIAbi, wTARIBridgeAbi, wXTMAbi, wXTMBridgeAbi } from './abis'
 import { DEPLOYMENTS_SOURCE, getDeployments } from './deployments'
 
@@ -30,6 +30,15 @@ describe('vendored contracts', () => {
       wXTMBridge: '0x810be828EFA687667B289C488A57a7B48Fb4523E',
     })
     expect(getDeployments(sepolia.id).wXTMBridge).toBe('0x4F31d7FC63FdBcfC119F9A0C0549150B00C356e8')
+  })
+
+  it('keeps the Base Sepolia wTARI deployment', () => {
+    expect(getDeployments(baseSepolia.id)).toMatchObject({
+      wTARI: '0x6602DF44Fbe038E0aaB2Ad7994Fc4e3e160E544E',
+      wTARIBridge: '0x8b21F505d9c0CeAb12A3a72Df4f808BaE9ef4F1a',
+      wTARIController: '0xDc9A42Fb12Ff0De7ac26E688AB47011Fea8cD452',
+      wTARIBridgeStartBlock: 59577684,
+    })
   })
 
   it('returns no addresses for an unknown chain', () => {

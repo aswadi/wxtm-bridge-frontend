@@ -1,5 +1,5 @@
 {
-  "source": "tari-project/wxtm-bridge-contracts@f4b2e53029ee0cc9fbbee01b1270d0dbf0226714",
+  "source": "tari-project/wxtm-bridge-contracts@87daeb86b6269c4a89801ca3fe1e31ceb39d45b2",
   "chains": {
     "1": {
       "wXTM": "0xfD36fA88bb3feA8D1264fc89d70723b6a2B56958",
@@ -9,7 +9,11 @@
     "84532": {
       "wXTM": "0xcBe79AB990E0Ab45Cb9148db7d434477E49b7374",
       "wXTMBridge": "0x52610316B50238d0f6259691762179A3d8E87908",
-      "wXTMController": "0x31999d652476b9e2ef4DEbA560CD39b9Af1AccA5"
+      "wXTMController": "0x31999d652476b9e2ef4DEbA560CD39b9Af1AccA5",
+      "wTARI": "0x6602DF44Fbe038E0aaB2Ad7994Fc4e3e160E544E",
+      "wTARIBridge": "0x8b21F505d9c0CeAb12A3a72Df4f808BaE9ef4F1a",
+      "wTARIController": "0xDc9A42Fb12Ff0De7ac26E688AB47011Fea8cD452",
+      "wTARIBridgeStartBlock": 59577684
     },
     "11155111": {
       "wXTM": "0xcBe79AB990E0Ab45Cb9148db7d434477E49b7374",
